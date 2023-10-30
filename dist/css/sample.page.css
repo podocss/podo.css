@@ -1,0 +1,46 @@
+header {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: var(--p-6);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+header > *:not(:last-child) {
+  margin-right: var(--m-2);
+}
+
+main {
+  margin-top: 100px;
+}
+
+article,
+section {
+  margin-bottom: var(--m-6);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-top: var(--m-3);
+  margin-bottom: var(--m-2);
+}
+
+.grid.guide > * {
+  background-color: var(--info-light);
+}
+.grid.guide > *:first-child {
+  background-color: var(--info);
+}
+
+.icons i {
+  margin-right: 4px;
+}
+
+/*# sourceMappingURL=sample.page.css.map */
