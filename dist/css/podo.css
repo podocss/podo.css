@@ -6,25 +6,25 @@ web font
   font-weight: 700;
   font-display: swap;
   font-variant-numeric: tabular-nums;
-  src: local("Pretendard Bold"), url("../font/Pretendard-Bold.woff2") format("woff2");
+  src: local("Pretendard Bold"), url("../../static/font/Pretendard-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 500;
   font-display: swap;
   font-variant-numeric: tabular-nums;
-  src: local("Pretendard Medium"), url("../font/Pretendard-Medium.woff2") format("woff2");
+  src: local("Pretendard Medium"), url("../../static/font/Pretendard-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 400;
   font-display: swap;
   font-variant-numeric: tabular-nums;
-  src: local("Pretendard Regular"), url("../font/Pretendard-Regular.woff2") format("woff2");
+  src: local("Pretendard Regular"), url("../../static/font/Pretendard-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "podo-icon";
-  src: url("../font/podo-icon.woff?ljglva") format("woff");
+  src: url("../../static/font/podo-icon.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -39,7 +39,9 @@ reset
   color: inherit;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -55,11 +57,16 @@ reset
   tab-size: 4;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -94,57 +101,60 @@ body {
   /*
   color & shadow
   */
-  --primary: #2697BD;
-  --primary-hover: #1F7593;
-  --primary-light: #EBF4F6;
-  --brand: #70B52C;
-  --brand-hover: #639F28;
-  --brand-light: #F2F9ED;
-  --bg: #F8F9FA;
-  --bg-1: #FFFFFF;
-  --bg-2: #FFFFFF;
-  --bg-3: #FFFFFF;
-  --card: #FFFFFF;
-  --inverse: #FFFFFF;
-  --disabled: #F1F3F4;
-  --disabled-1: #DADCE0;
-  --border: #E8EAED;
-  --border-1: #DADCE0;
-  --border-1-hover: #BDC1C6;
-  --border-2: #BDC1C6;
-  --default: #6A6D75;
-  --default-hover: #4B4E54;
-  --default-light: #EFF3F4;
-  --info: #3889FF;
-  --info-hover: #1F71E9;
-  --info-light: #F5F9FF;
-  --link: #4F55EA;
-  --link-hover: #3E44C8;
-  --link-light: #F7F7FF;
-  --success: #44CCB3;
-  --success-hover: #05AF9B;
-  --success-light: #F7FBFA;
-  --warning: #FFC73C;
-  --warning-hover: #F6B511;
-  --warning-light: #FEFCF5;
-  --danger: #FF5B45;
-  --danger-hover: #EA452F;
-  --danger-light: #FFFAF6;
+  --primary: #2697bd;
+  --primary-hover: #1f7593;
+  --primary-light: #ebf4f6;
+  --brand: #70b52c;
+  --brand-hover: #639f28;
+  --brand-light: #f2f9ed;
+  --bg: #f8f9fa;
+  --bg-1: #ffffff;
+  --bg-2: #ffffff;
+  --bg-3: #ffffff;
+  --card: #ffffff;
+  --inverse: #ffffff;
+  --disabled: #f1f3f4;
+  --disabled-1: #dadce0;
+  --border: #e8eaed;
+  --border-1: #dadce0;
+  --border-1-hover: #bdc1c6;
+  --border-2: #bdc1c6;
+  --default: #6a6d75;
+  --default-hover: #4b4e54;
+  --default-light: #eff3f4;
+  --info: #3889ff;
+  --info-hover: #1f71e9;
+  --info-light: #f5f9ff;
+  --link: #4f55ea;
+  --link-hover: #3e44c8;
+  --link-light: #f7f7ff;
+  --success: #44ccb3;
+  --success-hover: #05af9b;
+  --success-light: #f7fbfa;
+  --warning: #ffc73c;
+  --warning-hover: #f6b511;
+  --warning-light: #fefcf5;
+  --danger: #ff5b45;
+  --danger-hover: #ea452f;
+  --danger-light: #fffaf6;
   --text-header: #161718;
-  --text-body: #2B2C30;
-  --text-disabled: #BDC1C6;
-  --text-sub: #80868B;
-  --gray-0: #FFFFFF;
-  --gray-1: #F8F9FA;
-  --gray-2: #F1F3F4;
-  --gray-3: #DADCE0;
-  --gray-4: #BDC1C6;
-  --gray-5: #52555C;
+  --text-body: #2b2c30;
+  --text-disabled: #bdc1c6;
+  --text-sub: #80868b;
+  --gray-0: #ffffff;
+  --gray-1: #f8f9fa;
+  --gray-2: #f1f3f4;
+  --gray-3: #dadce0;
+  --gray-4: #bdc1c6;
+  --gray-5: #52555c;
   --fix-black: #000000;
-  --fix-white: #FFFFFF;
-  --shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
-  --shadow-1: 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-  --shadow-2: 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 8px 8px 0px rgba(0, 0, 0, 0.10);
+  --fix-white: #ffffff;
+  --shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  --shadow-1: 0px 0px 2px 0px rgba(0, 0, 0, 0.1),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  --shadow-2: 0px 0px 2px 0px rgba(0, 0, 0, 0.1),
+    0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   background-color: var(--bg);
   /*
   text
@@ -240,33 +250,33 @@ body {
 }
 body.dark {
   --primary-light: #273033;
-  --brand-light: #2D312A;
+  --brand-light: #2d312a;
   --bg: #161718;
-  --bg-1: #1E1F21;
-  --bg-2: #2B2C30;
-  --bg-3: #383A40;
+  --bg-1: #1e1f21;
+  --bg-2: #2b2c30;
+  --bg-3: #383a40;
   --card: #404249;
   --disabled: #404249;
-  --disabled-1: #52555C;
-  --border: #2B2C30;
-  --border-1: #383A40;
-  --border-1-hover: #52555C;
-  --border-2: #52555C;
+  --disabled-1: #52555c;
+  --border: #2b2c30;
+  --border-1: #383a40;
+  --border-1-hover: #52555c;
+  --border-2: #52555c;
   --default-light: #323438;
-  --info-light: #252B33;
+  --info-light: #252b33;
   --link-light: #272833;
-  --success-light: #222F2D;
-  --warning-light: #332E23;
+  --success-light: #222f2d;
+  --warning-light: #332e23;
   --danger-light: #332725;
-  --text-header: #E8EAED;
-  --text-body: #BDC1C6;
-  --text-disabled: #8C9298;
+  --text-header: #e8eaed;
+  --text-body: #bdc1c6;
+  --text-disabled: #8c9298;
   --gray: #161718;
-  --gray-1: #1E1F21;
-  --gray-2: #2B2C30;
-  --gray-3: #383A40;
-  --gray-4: #52555C;
-  --gray-5: #9AA0A6;
+  --gray-1: #1e1f21;
+  --gray-2: #2b2c30;
+  --gray-3: #383a40;
+  --gray-4: #52555c;
+  --gray-5: #9aa0a6;
   --shadow: none;
   --shadow-1: none;
   --shadow-2: none;
@@ -405,58 +415,76 @@ body :not(button).fix-black {
 body :not(button).fix-white {
   color: var(--fix-white);
 }
-body :not(button) a:hover, body :not(button) .hover:hover:not(:disabled) {
+body :not(button) a:hover,
+body :not(button) .hover:hover:not(:disabled) {
   cursor: pointer;
 }
-body :not(button) a:hover.primary, body :not(button) .hover:hover:not(:disabled).primary {
+body :not(button) a:hover.primary,
+body :not(button) .hover:hover:not(:disabled).primary {
   color: var(--primary-hover);
 }
-body :not(button) a:hover.bg-primary, body :not(button) .hover:hover:not(:disabled).bg-primary {
+body :not(button) a:hover.bg-primary,
+body :not(button) .hover:hover:not(:disabled).bg-primary {
   background-color: var(--primary-hover);
 }
-body :not(button) a:hover.brand, body :not(button) .hover:hover:not(:disabled).brand {
+body :not(button) a:hover.brand,
+body :not(button) .hover:hover:not(:disabled).brand {
   color: var(--brand-hover);
 }
-body :not(button) a:hover.bg-brand, body :not(button) .hover:hover:not(:disabled).bg-brand {
+body :not(button) a:hover.bg-brand,
+body :not(button) .hover:hover:not(:disabled).bg-brand {
   background-color: var(--brand-hover);
 }
-body :not(button) a:hover.border-1, body :not(button) .hover:hover:not(:disabled).border-1 {
+body :not(button) a:hover.border-1,
+body :not(button) .hover:hover:not(:disabled).border-1 {
   border-color: var(--border-1-hover);
 }
-body :not(button) a:hover.default, body :not(button) .hover:hover:not(:disabled).default {
+body :not(button) a:hover.default,
+body :not(button) .hover:hover:not(:disabled).default {
   color: var(--default);
 }
-body :not(button) a:hover.bg-default, body :not(button) .hover:hover:not(:disabled).bg-default {
+body :not(button) a:hover.bg-default,
+body :not(button) .hover:hover:not(:disabled).bg-default {
   background-color: var(--default);
 }
-body :not(button) a:hover.info, body :not(button) .hover:hover:not(:disabled).info {
+body :not(button) a:hover.info,
+body :not(button) .hover:hover:not(:disabled).info {
   color: var(--info-hover);
 }
-body :not(button) a:hover.bg-info, body :not(button) .hover:hover:not(:disabled).bg-info {
+body :not(button) a:hover.bg-info,
+body :not(button) .hover:hover:not(:disabled).bg-info {
   background-color: var(--info-hover);
 }
-body :not(button) a:hover.link, body :not(button) .hover:hover:not(:disabled).link {
+body :not(button) a:hover.link,
+body :not(button) .hover:hover:not(:disabled).link {
   color: var(--link-hover);
 }
-body :not(button) a:hover.bg-link, body :not(button) .hover:hover:not(:disabled).bg-link {
+body :not(button) a:hover.bg-link,
+body :not(button) .hover:hover:not(:disabled).bg-link {
   background-color: var(--link-hover);
 }
-body :not(button) a:hover.success, body :not(button) .hover:hover:not(:disabled).success {
+body :not(button) a:hover.success,
+body :not(button) .hover:hover:not(:disabled).success {
   color: var(--success-hover);
 }
-body :not(button) a:hover.bg-success, body :not(button) .hover:hover:not(:disabled).bg-success {
+body :not(button) a:hover.bg-success,
+body :not(button) .hover:hover:not(:disabled).bg-success {
   background-color: var(--success-hover);
 }
-body :not(button) a:hover.warning, body :not(button) .hover:hover:not(:disabled).warning {
+body :not(button) a:hover.warning,
+body :not(button) .hover:hover:not(:disabled).warning {
   color: var(--warning-hover);
 }
-body :not(button) a:hover.bg-warning, body :not(button) .hover:hover:not(:disabled).bg-warning {
+body :not(button) a:hover.bg-warning,
+body :not(button) .hover:hover:not(:disabled).bg-warning {
   background-color: var(--warning-hover);
 }
-body :not(button) a:hover.danger, body :not(button) .hover:hover:not(:disabled).danger {
+body :not(button) a:hover.danger,
+body :not(button) .hover:hover:not(:disabled).danger {
   color: var(--danger-hover);
 }
-body :not(button) a:hover.bg-danger, body :not(button) .hover:hover:not(:disabled).bg-danger {
+body :not(button) a:hover.bg-danger,
+body :not(button) .hover:hover:not(:disabled).bg-danger {
   background-color: var(--danger-hover);
 }
 body a {
@@ -1202,7 +1230,8 @@ body .hide {
     display: none !important;
   }
 }
-body [class^=icon-]::before, body [class*=" icon-"]::before {
+body [class^=icon-]::before,
+body [class*=" icon-"]::before {
   font-family: "podo-icon" !important;
   font-style: normal;
   font-weight: normal;
@@ -1414,25 +1443,42 @@ body .with-icon {
   display: inline-block;
   vertical-align: middle;
 }
-body .with-icon > select, body .with-icon > input[type=text], body .with-icon > input[type=password], body .with-icon > input[type=email], body .with-icon > input[type=number], body .with-icon > input[type=tel], body .with-icon > input[type=url], body .with-icon > textarea {
+body .with-icon > select,
+body .with-icon > input[type=text],
+body .with-icon > input[type=password],
+body .with-icon > input[type=email],
+body .with-icon > input[type=number],
+body .with-icon > input[type=tel],
+body .with-icon > input[type=url],
+body .with-icon > textarea {
   padding-left: var(--p-8);
   position: relative;
 }
-body .with-icon > [class^=icon-], body .with-icon > [class*=" icon-"] {
+body .with-icon > [class^=icon-],
+body .with-icon > [class*=" icon-"] {
   position: absolute;
   left: var(--p-1);
-  top: var(--p-1);
+  top: var(--p-2);
   z-index: 1;
   color: var(--gray-5);
 }
-body .with-icon > [class^=icon-]::before, body .with-icon > [class*=" icon-"]::before {
+body .with-icon > [class^=icon-]::before,
+body .with-icon > [class*=" icon-"]::before {
   font-size: 1.2rem;
 }
-body .with-icon.right > select, body .with-icon.right > input[type=text], body .with-icon.right > input[type=password], body .with-icon.right > input[type=email], body .with-icon.right > input[type=number], body .with-icon.right > input[type=tel], body .with-icon.right > input[type=url], body .with-icon.right > textarea {
+body .with-icon.right > select,
+body .with-icon.right > input[type=text],
+body .with-icon.right > input[type=password],
+body .with-icon.right > input[type=email],
+body .with-icon.right > input[type=number],
+body .with-icon.right > input[type=tel],
+body .with-icon.right > input[type=url],
+body .with-icon.right > textarea {
   padding-right: var(--p-8);
   padding-left: var(--p-3);
 }
-body .with-icon.right > [class^=icon-], body .with-icon.right > [class*=" icon-"] {
+body .with-icon.right > [class^=icon-],
+body .with-icon.right > [class*=" icon-"] {
   right: var(--p-4);
   left: auto;
 }
@@ -1514,7 +1560,8 @@ body button.danger {
   --light-color: var(--danger-light);
   --light-hover-color: var(--danger-light);
 }
-body button [class^=icon-]::before, body button [class*=" icon-"]::before {
+body button [class^=icon-]::before,
+body button [class*=" icon-"]::before {
   font-size: inherit;
 }
 body button > i {
@@ -1569,10 +1616,15 @@ body button.text:hover:not(:disabled) {
 body button.text:disabled {
   color: var(--text-disabled);
 }
-body input:not(:last-child), body select:not(:last-child), body textarea:not(:last-child), body button:not(:last-child), body span:not(:last-child) {
+body input:not(:last-child),
+body select:not(:last-child),
+body textarea:not(:last-child),
+body button:not(:last-child),
+body span:not(:last-child) {
   margin-right: var(--gap-2);
 }
-body input[type=checkbox] + span:not(:last-child), body input[type=radio] + span:not(:last-child) {
+body input[type=checkbox] + span:not(:last-child),
+body input[type=radio] + span:not(:last-child) {
   margin-right: var(--gap-5);
 }
 body .toggle {
@@ -1620,7 +1672,8 @@ body .toggle:checked:disabled {
 body .toggle:checked:disabled::before {
   background-color: var(--disabled);
 }
-body input[type=checkbox]:not(.toggle), body input[type=radio] {
+body input[type=checkbox]:not(.toggle),
+body input[type=radio] {
   margin-top: -1px;
   appearance: none;
   position: relative;
@@ -1629,7 +1682,8 @@ body input[type=checkbox]:not(.toggle), body input[type=radio] {
   cursor: pointer;
   vertical-align: middle;
 }
-body input[type=checkbox]:not(.toggle)::before, body input[type=radio]::before {
+body input[type=checkbox]:not(.toggle)::before,
+body input[type=radio]::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -1687,7 +1741,8 @@ body input[type=radio]:checked:disabled::before {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 10C3.33333 13.6819 6.3181 16.6667 10 16.6667C13.6819 16.6667 16.6667 13.6819 16.6667 10C16.6667 6.3181 13.6819 3.33333 10 3.33333C6.3181 3.33333 3.33333 6.3181 3.33333 10ZM10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5Z" fill="%23D9D9DD"/><circle cx="10" cy="10" r="4.16667" fill="%23D9D9DD"/></svg>');
   cursor: not-allowed;
 }
-body input[type=checkbox]:not(.toggle):disabled + span, body input[type=radio]:disabled + span {
+body input[type=checkbox]:not(.toggle):disabled + span,
+body input[type=radio]:disabled + span {
   color: var(--text-disabled);
   cursor: not-allowed;
 }
@@ -1939,7 +1994,8 @@ body table {
   border-radius: var(--r-3);
   border: none;
 }
-body table th, body table td {
+body table th,
+body table td {
   padding: 10px;
   text-align: center;
 }
@@ -1961,10 +2017,12 @@ body table.striped tbody > tr:nth-child(odd) {
 body.dark table.striped tbody > tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.15);
 }
-body i[class^=icon-] + i.badge-icon, body i[class*=" icon-"] + i.badge-icon {
+body i[class^=icon-] + i.badge-icon,
+body i[class*=" icon-"] + i.badge-icon {
   position: relative;
 }
-body i[class^=icon-] + i.badge-icon:after, body i[class*=" icon-"] + i.badge-icon:after {
+body i[class^=icon-] + i.badge-icon:after,
+body i[class*=" icon-"] + i.badge-icon:after {
   position: absolute;
   top: -2px;
   right: 0;
@@ -1977,7 +2035,8 @@ body i[class^=icon-] + i.badge-icon:after, body i[class*=" icon-"] + i.badge-ico
   line-height: 1;
   content: " ";
 }
-body i[class^=icon-] + i.badge-number, body i[class*=" icon-"] + i.badge-number {
+body i[class^=icon-] + i.badge-number,
+body i[class*=" icon-"] + i.badge-number {
   position: relative;
   top: -8px;
   margin-left: -15px;
